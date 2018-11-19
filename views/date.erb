@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Crappy app</title>
+    </head>
+    <body>
+      <h1>Today</h1>
+      <%
+      date = Time.now.day
+      day = Time.now.strftime("%A")
+      year = Time.now.year
+      month = Time.now.strftime("%B")
+      %>
+      <p><%= "The date is #{day}, #{month} #{date}, #{year}"%></p>
+  </body>
+</html>
